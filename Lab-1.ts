@@ -3,6 +3,31 @@
 //Create an interface Listing that will represent an object
 //from the listings array below to resolve the type error.
 
+//Source for first task: https://www.w3schools.com/typescript/typescript_aliases_and_interfaces.php
+
+interface PropertySummary
+{
+  propertyType: string;
+  buildingType: string;
+  storeys: string;
+  title: string;
+  builtIn: string;
+  taxes: string;
+  parking: string;
+};
+
+interface buildingSummary
+{
+  bedrooms: string;
+  bathrooms: string;
+  buildingFeatures: string[];
+  cooling: string;
+  heating: string;
+  sewer: string;
+  water: string; 
+  size: string;
+};
+
 const listings: Listing[] = [
   {
     id: "10100",
@@ -481,6 +506,8 @@ const listings: Listing[] = [
  * from the array above
  */
 //WRITE YOUR CODE BELOW
+
+const listing0 = listings[0];
 
 /**
  * Task-3:
