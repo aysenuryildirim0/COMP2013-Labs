@@ -522,6 +522,14 @@ const listing0 = listings[0];
  */
 //WRITE YOUR CODE BELOW
 
+const listing0Updated = 
+{
+  ...listing0, //Source: https://www.convex.dev/typescript/advanced/advanced-concepts/typescript-spread-operator
+  isSold = false;
+  currentOwner: "Jane Doe";
+
+};
+
 /**
  * NOTE: THIS TASK IS TRICKY!
  * Task-4:
@@ -554,3 +562,8 @@ const listing0 = listings[0];
  * This array should result in two listings only
  */
 //WRITE YOUR CODE BELOW
+
+//Source: https://www.geeksforgeeks.org/typescript/typescript-array-filter-method/
+
+const townhouseListings = listings.filter ((listing) => 
+listing.propertySummary.buildingType === "Townhouse");
