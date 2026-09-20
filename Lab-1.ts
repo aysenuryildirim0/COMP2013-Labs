@@ -5,7 +5,7 @@
 
 //Source for first task: https://www.w3schools.com/typescript/typescript_aliases_and_interfaces.php
 
-interface PropertySummary
+interface propertySummary
 {
   propertyType: string;
   buildingType: string;
@@ -26,6 +26,17 @@ interface buildingSummary
   sewer: string;
   water: string; 
   size: string;
+};
+
+interface Listing
+{
+  id: string;
+  price: string;
+  postalCode: string;
+  MLSnumber: string;
+  description: string;
+  address: string;
+  photo: string;
 };
 
 const listings: Listing[] = [
@@ -553,6 +564,10 @@ const listing0Updated =
  * according to their built year
  */
 //WRITE YOUR CODE BELOW
+//Sources: https://www.convex.dev/typescript/advanced/advanced-concepts/typescript-spread-operator
+//https://www.geeksforgeeks.org/typescript/typescript-sorting-array/
+
+const listingAscendingly = ...Listing.sort((a, b) => a.propertySummary.builtIn - b.propertySummary.builtIn);
 
 /**
  * Task-6:
